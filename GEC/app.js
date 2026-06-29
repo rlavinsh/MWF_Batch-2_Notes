@@ -1,18 +1,5 @@
-// function c() {
-//   var d = 200;
-//   console.log("Inside function");
-//   function e(para) {
-//     console.log(para);
-//   }
+var a = 10;
+var b = 20;
 
-//   console.log(d);
-//   e("Hello JS");
-//   return "something";
-// }
-
-// var f = c();
-// console.log(f);
-// console.log("code ends");
-
-
-
+console.log(a);
+console.log(b);

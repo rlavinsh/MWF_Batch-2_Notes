@@ -37,14 +37,84 @@
 
 // Return
 
-function calculateSum(num1, num2) {
-  console.log("Calcualting sum....");
+// function calculateSum(num1, num2) {
+//   console.log("Calcualting sum....");
 
-  return num1 + num2;
-  return num1; // Ignore
-  return num2; // Ignore
-  console.log("Hello"); // Ignore
+//   return num1 + num2;
+//   return num1; // Ignore
+//   return num2; // Ignore
+//   console.log("Hello"); // Ignore
+// }
+
+// let result = calculateSum(10, 20);
+// console.log(result);
+
+// IIFE()
+
+// Syntax:
+
+// (function () {
+// })();
+
+function greet() {
+  console.log("welcome");
 }
 
-let result = calculateSum(10, 20);
-console.log(result);
+// greet();
+
+// (function () {
+//   console.log("hello1");
+// })();
+
+// (function () {
+//   console.log("hello2");
+// })();
+
+// "use strict";
+// let public = 10;
+// console.log(public);
+
+function checkVowelConsonant(str) {
+  let vowelCount = 0;
+  let consonantCount = 0;
+  for (let ch of str) {
+    if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+      vowelCount++;
+    } else {
+      consonantCount++;
+    }
+  }
+  return { vowelCount, consonantCount };
+}
+
+let result = checkVowelConsonant("hello JavaScript");
+console.log(`Total Vowels: ${result.vowelCount}`);
+console.log(`Total Consonants: ${result.consonantCount}`);
+
+// convert function to function expression
+// const checkVowelConsonant = function (str) {
+//   let vowelCount = 0;
+//   let consonantCount = 0;
+//   for (let ch of str) {
+//     if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+//       vowelCount++;
+//     } else {
+//       consonantCount++;
+//     }
+//   }
+//   return { vowelCount, consonantCount };
+// };
+
+// convert function to arrow function
+// const checkVowelConsonant = (str) => {
+//   let vowelCount = 0;
+//   let consonantCount = 0;
+//   for (let ch of str) {
+//     if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+//       vowelCount++;
+//     } else {
+//       consonantCount++;
+//     }
+//   }
+//   return { vowelCount, consonantCount };
+// };
