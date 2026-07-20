@@ -99,11 +99,11 @@
 
 // green color
 // font size 24px
-let allPara = document.getElementsByTagName("p");
-console.log(allPara);
-for (let i = 0; i < allPara.length; i++) {
-  ((allPara[i].style.color = "green"), (allPara[i].style.fontSize = "24px"));
-}
+// let allPara = document.getElementsByTagName("p");
+// console.log(allPara);
+// for (let i = 0; i < allPara.length; i++) {
+//   ((allPara[i].style.color = "green"), (allPara[i].style.fontSize = "24px"));
+// }
 
 // Example-3
 // <div class="student">Rahul</div>
@@ -160,3 +160,4 @@ for (let i = 0; i < allPara.length; i++) {
 // background black
 // text white
 // padding 20px
+

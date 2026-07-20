@@ -246,3 +246,46 @@ border
 margin
 
 do.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Traversing</title>
+</head>
+<body>
+
+    <h1>Geeks Of Gurukul</h1>
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We teach Full Stack Development.
+        </p>
+
+    </section>
+
+    <section id="courses">
+
+        <h2>Courses</h2>
+
+        <ul>
+
+            <li>HTML</li>
+
+            <li>CSS</li>
+
+            <li>JavaScript</li>
+
+            <li>React</li>
+
+        </ul>
+
+    </section>
+
+</body>
+</html>
