@@ -60,13 +60,26 @@ let grapes = document.querySelector("#grapes");
 //syntax:
 //selectedElement.classList.remove("class ka Name")
 // container.classList.remove("container");
-let container = document.querySelector("div");
+// let container = document.querySelector("div");
 
-let changeTheme = document.querySelector(".dark");
-changeTheme.addEventListener("click", function () {
-  //   console.log("Theme change karna hein");
-  container.classList.toggle("container");
-  console.log(container);
+// let changeTheme = document.querySelector(".dark");
+// changeTheme.addEventListener("click", function () {
+//   //   console.log("Theme change karna hein");
+//   container.classList.toggle("container");
+//   console.log(container);
+// });
+
+// container.classList.contains()
+
+// Change Theme
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    btn.textContent = "change to Light Theme";
+  } else {
+    btn.textContent = "Change to Dark Theme";
+  }
 });
-
-container.classList.contains()
