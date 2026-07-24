@@ -72,14 +72,20 @@ let grapes = document.querySelector("#grapes");
 // container.classList.contains()
 
 // Change Theme
-let btn = document.querySelector("#btn");
+// let btn = document.querySelector("#btn");
 
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+// btn.addEventListener("click", () => {
+//   document.body.classList.toggle("dark");
 
-  if (document.body.classList.contains("dark")) {
-    btn.textContent = "change to Light Theme";
-  } else {
-    btn.textContent = "Change to Dark Theme";
-  }
-});
+//   if (document.body.classList.contains("dark")) {
+//     btn.textContent = "change to Light Theme";
+//   } else {
+//     btn.textContent = "Change to Dark Theme";
+//   }
+// });
+
+// let div = document.querySelector("div");
+// // console.log(div);
+// div.setAttribute("id", "div1");
+// console.log(div.getAttribute("class"));
+// A
