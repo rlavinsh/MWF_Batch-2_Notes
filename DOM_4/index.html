@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        /* justify-content: space-between; */
+        /* background-color: orange; */
+      }
+
+      .card {
+        display: flex;
+        gap: 5px;
+        /* justify-content: space-between; */
+      }
+      .btn {
+        border: none;
+        background-color: yellow;
+        padding: 10px;
+        border-radius: 10px;
+        /* width: fit-content;
+             */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form id="submitform">
+        <input type="text" placeholder="enter your name" class="username">
+        <input type="submit" value="register">
+        <button class="btn">submit</button>
+    </form> -->
+    <!-- Event Bubbling
+    <div id="parent">
+      <button class="btn">Click</button>
+    </div> -->
+    <!-- <div id="grandParent">
+      <div id="parent">
+        <button class="btn">Click</button>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="card">
+        <h2>Apple</h2>
+        <button class="btn">Delete</button>
+      </div>
+
+      <div class="card">
+        <h2>Banana</h2>
+        <button class="btn">Delete</button>
+      </div>
+
+      <div class="card">
+        <h2>Mango</h2>
+        <button class="btn">Delete</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -32,13 +32,15 @@
 //   document.body.style.backgroundColor = theme.value;
 // });
 
-let input = document.querySelector("input");
-let result = document.querySelector(".result");
+// let input = document.querySelector("input");
+// let result = document.querySelector(".result");
 
-input.addEventListener("input", () => {
-  result.textContent = input.value.length;
-  if (input.value.length == 5) {
-    alert("limit ho gayi");
-  }
-});
+// input.addEventListener("input", () => {
+//   result.textContent = input.value.length;
+//   if (input.value.length == 5) {
+//     alert("limit ho gayi");
+//   }
+// });
 // console.dir(input);
+
+

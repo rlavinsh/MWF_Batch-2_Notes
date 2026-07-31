@@ -37,3 +37,4 @@ function Decrement(){
     counter.textContent = count;
 }
 Decre.addEventListener("click", Decrement);
+
