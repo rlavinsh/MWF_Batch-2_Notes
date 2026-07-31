@@ -11,25 +11,29 @@
         box-sizing: border-box;
       }
       .container {
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        /* justify-content: space-between; */
-        /* background-color: orange; */
+        background-color: orange;
       }
 
       .card {
         display: flex;
-        gap: 5px;
-        /* justify-content: space-between; */
+        align-items: center;
+        gap: 10px;
       }
       .btn {
         border: none;
         background-color: yellow;
         padding: 10px;
         border-radius: 10px;
-        /* width: fit-content;
-             */
+      }
+      .btn1 {
+        margin-top: 10px;
+        border: none;
+        padding: 10px;
+        background-color: green;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -63,6 +67,15 @@
         <h2>Mango</h2>
         <button class="btn">Delete</button>
       </div>
+    </div>
+    <button class="btn1">Add Card</button>
+
+    <div class="parent">
+      <button class="btns">Button1</button>
+    <button class="btns">Button2</button>
+    <button class="btns">Button3</button>
+    <button class="btns">Button4</button>
+    <button class="btns">Button5</button>
     </div>
     <script src="./app.js"></script>
   </body>

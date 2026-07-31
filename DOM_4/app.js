@@ -52,5 +52,45 @@
 //   },
 //   true,
 // );
+let container = document.querySelector(".container");
 
+let card = document.querySelector(".card");
 
+let addCard = document.querySelector(".btn1");
+
+let allButtons = document.querySelectorAll(".btn");
+
+container.addEventListener("click", (event) => {
+  console.log(event.target);
+
+  if (event.target.classList.contains("btn")) {
+    event.target.parentElement.remove();
+  }
+});
+
+// allButtons.forEach((btn) => {
+//   btn.addEventListener("click", (event) => {
+//     console.log(event.target.parentElement.remove());
+//   });
+// });
+
+addCard.addEventListener("click", () => {
+  const div = document.createElement("div");
+  div.setAttribute("class", "card");
+  div.innerHTML = ` <h2>Fruit${Math.floor(Math.random() * 200)}</h2>
+        <button class="btn">Delete</button>`;
+  console.log(div);
+
+  container.append(div);
+});
+
+let parentDiv = document.querySelector(".parent");
+
+let Buttons = document.querySelectorAll(".btns");
+
+Buttons.forEach((Item) => {
+  // console.log(Item);
+  Item.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
