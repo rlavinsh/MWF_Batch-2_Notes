@@ -24,9 +24,9 @@ function createCard(colorCode) {
   div.prepend(span);
   return div;
 }
-
+let colorPalette = document.querySelector("#colorPalette");
 function generatePalette() {
-  let colorPalette = document.querySelector("#colorPalette");
+  colorPalette = document.querySelector("#colorPalette");
   colorPalette.innerHTML = "  ";
   for (let i = 0; i < 5; i++) {
     let colorCode = randomColor();
@@ -38,3 +38,17 @@ function generatePalette() {
 generatePalette();
 
 generateBtn.addEventListener("click", generatePalette);
+
+colorPalette.addEventListener("click", (event) => {
+  if (event.target.classList.contains("color-code")) {
+    let hexValue = event.target.innerText;
+    navigator.clipboard
+      .writeText(hexValue)
+      .then(() => {
+        alert("Copied");
+      })
+      .catch(() => {
+        alert("Failed to copy the color code!");
+      });
+  }
+});
