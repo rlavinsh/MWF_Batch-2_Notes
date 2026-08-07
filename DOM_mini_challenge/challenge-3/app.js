@@ -20,3 +20,10 @@ const quotes = [
   "Knowledge increases when it is shared.",
   "Never stop improving yourself.",
 ];
+
+let para = document.querySelector("#quote");
+let button = document.querySelector("#btn")
+
+
+para.textContent = quotes[5]
+console.log(para);
