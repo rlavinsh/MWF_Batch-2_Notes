@@ -38,3 +38,10 @@ employeeForm.addEventListener("submit", (event) => {
   employeeTableBody.append(tr);
   employeeForm.reset();
 });
+
+employeeTableBody.addEventListener("click", (event) => {
+  // console.log(event.target);
+  if (event.target.classList.contains("deleteBtn")) {
+    event.target.closest("tr").remove();
+  }
+});
