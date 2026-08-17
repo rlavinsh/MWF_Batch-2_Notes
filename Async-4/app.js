@@ -38,4 +38,28 @@ Reason: Customer score is below 50
 Email processing completed
  */
 
+function sendEmail(email) {
+  console.log(`Processing email: ${email}`);
+  return new Promise((resolve, reject) => {
+    const score = Math.floor(Math.random() * 100) + 1;
+    console.log(`Customer Score: ${score}`);
 
+    if (score >= 50) {
+      resolve(`Email sent successfully to ${email}`);
+    } else {
+      reject(`Email could not be sent to ${email}
+                    Reason: Customer score is below 50`);
+    }
+  });
+}
+
+sendEmail("abc@gmail.com")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+  .finally(() => {
+    console.log("Email processing completed");
+  });
