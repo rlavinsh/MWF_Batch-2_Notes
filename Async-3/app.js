@@ -84,6 +84,37 @@ function loginUser(userid, username) {
   });
 }
 
+function getAllPost(userid) {
+  console.log("Post fetch ki ja rahi hein");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve([
+        { postId: 1, titlt: "KGF" },
+        { postId: 2, title: "Spider Man" },
+      ]);
+    }, 2000);
+  });
+}
+function getAllComments(postId) {
+  console.log("all comments fetch ho rahe hein");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve([
+        { commentId: 1, comment: "Fine" },
+        { commentId: 2, comment: "Awesome" },
+      ]);
+    }, 3000);
+  });
+}
+function getSingleComment(comments) {
+  console.log("single comment aa raha hein");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(comments[0].comment);
+    }, 2000);
+  });
+}
+
 loginUser("1", "john@gmail.com")
   .then((data) => {
     console.log(data);
