@@ -119,5 +119,20 @@ loginUser("1", "john@gmail.com")
   .then((data) => {
     console.log(data);
     console.log("user login ho gaya");
+    return getAllPost(data.userid);
+  })
+  .then((allPost) => {
+    console.log(allPost);
+    console.log("sabhi post aa gayi hein");
+    return getAllComments(allPost[0].postId);
+  })
+  .then((allComments) => {
+    console.log(allComments);
+    console.log("sabhi comments aa gaye hein");
+    return getSingleComment(allComments);
+  })
+  .then((singleComment) => {
+    console.log(singleComment);
+    console.log("single comment bhi aa gaya");
   })
   .catch((err) => {});
